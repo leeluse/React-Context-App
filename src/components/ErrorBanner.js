@@ -1,9 +1,14 @@
 import React from 'react'
 
 const ErrorBanner = ({ message }) => {
-  return (
-    <div>{message}</div>
-  )
+    let errorMessage = message || "에러입니다.";
+    return (
+        <div
+            style={{ backgroundColor: 'red' }}
+        >
+            {errorMessage}
+        </div>
+    )
 }
 
 export default ErrorBanner
